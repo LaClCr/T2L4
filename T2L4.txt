@@ -1,6 +1,6 @@
 EXERCICI 1.
 
-ls -l | awk '{print $5,$9}' | sed's/ /:/'
+ls -l | awk '{print $5,$9}' | sed 's/ /:/'
 
 EXERCICI 2.
 
