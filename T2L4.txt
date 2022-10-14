@@ -14,4 +14,7 @@ EXERCICI 4.
 
 cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Levante | sort -k3n | awk '{print $2,$3}' > Levante.txt
 
+EXERCICI 5.
+
+cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Valencia | sort -k3n | awk '{print $2,$3}' > Valencia.txt
 
