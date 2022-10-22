@@ -1,20 +1,20 @@
-EXERCICI 1.
+EXERCICI 1.	Mostra els fitxers del teu directori home junt amb el seu tamany separats per “:”.
 
 ls -l | awk '{print $5,$9}' | sed 's/ /:/'
 
-EXERCICI 2.
+EXERCICI 2.	Ara fes el mateix que abans però ordenat de menor a major tamany.
 
 ls -l | awk '{print $5,$9}' | sort -n
 
-EXERCICI 3. 
+EXERCICI 3.	Fes el comandament per generar el fitxer empate.txt
 
 cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep empate | sort -k3n | awk '{print $2,$3}' > empate.txt
 
-EXERCICI 4.
+EXERCICI 4.	Igual per al fitxer valencia.txt
 
 cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Levante | sort -k3n | awk '{print $2,$3}' > Levante.txt
 
-EXERCICI 5.
+EXERCICI 5.	Per últim, crea levante.txt
 
 cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Valencia | sort -k3n | awk '{print $2,$3}' > Valencia.txt
 
